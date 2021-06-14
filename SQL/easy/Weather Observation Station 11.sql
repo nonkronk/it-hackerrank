@@ -21,4 +21,4 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 SELECT DISTINCT(CITY) FROM STATION 
 WHERE LEFT(CITY,1) NOT IN ("A", "I", "U", "E", "O")
-AND RIGHT(CITY,1) NOT IN ("A", "I", "U", "E", "O");
+OR RIGHT(CITY,1) NOT IN ("A", "I", "U", "E", "O");
